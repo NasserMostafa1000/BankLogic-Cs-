@@ -1,8 +1,8 @@
-🏦 Bank Management System (Console App)
+🏦 Bank Management System (Desktop App)
 🛠 Overview
 This is a fully self-developed desktop banking application created by me to practice C# syntax and explore advanced algorithms and data structures. The system was designed to simulate real-world banking operations and includes core banking features implemented using .NET Framework (C#).
 
-The application is console-based and leverages in-memory data structures along with persistent storage (optional for advanced use) to manage clients, accounts, certificates, and loans.
+The application provides a complete desktop interface (using Windows Forms or WPF) to manage customers, accounts, certificates, loans, and transactions, with a focus on business logic and algorithmic implementation. The user interface is functional but not the primary focus of this project.
 
 ✨ Key Features
 👤 Customer Management
@@ -58,14 +58,16 @@ Outstanding loans.
 
 Customer balances.
 
-Simple, easy-to-use console navigation.
+User-friendly desktop interface with navigation and basic interaction.
 
 Fully object-oriented design with separation of concerns (Accounts, Loans, Certificates, Customers as different classes).
 
 🚀 Technologies Used
 .NET Framework (C#)
 
-Console Application
+Windows Forms/WPF for UI
+
+SQLite for Database (or another persistent storage if applicable)
 
 ⚠️ Important Notice
 This application is intended for learning and practice purposes only and is not used in a real-world banking environment. It was developed as part of my journey to master C# programming and understand complex business logic, especially financial algorithms.
