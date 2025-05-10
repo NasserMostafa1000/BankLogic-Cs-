@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{823586CD-9337-4D18-9BD0-31D7D6C8EBC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankSystem</RootNamespace>
+    <AssemblyName>BankSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrudCertificatecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudCertificatecs.Designer.cs">
+      <DependentUpon>CrudCertificatecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudClient.Designer.cs">
+      <DependentUpon>CrudClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudCreditors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudCreditors.Designer.cs">
+      <DependentUpon>CrudCreditors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudDebtors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudDebtors.Designer.cs">
+      <DependentUpon>CrudDebtors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudDepartments.Designer.cs">
+      <DependentUpon>CrudDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudEmployee.Designer.cs">
+      <DependentUpon>CrudEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudLoans.Designer.cs">
+      <DependentUpon>CrudLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrDebtors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrDebtors.Designer.cs">
+      <DependentUpon>ctrDebtors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrDepartments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrDepartments.Designer.cs">
+      <DependentUpon>CtrDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlCertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlCertificate.Designer.cs">
+      <DependentUpon>CtrlCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlClient.Designer.cs">
+      <DependentUpon>CtrlClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlCreditors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlCreditors.Designer.cs">
+      <DependentUpon>ctrlCreditors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrlEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlEmployee.Designer.cs">
+      <DependentUpon>ctrlEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrLoans.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrLoans.Designer.cs">
+      <DependentUpon>CtrLoans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateAndTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateAndTime.Designer.cs">
+      <DependentUpon>DateAndTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrudCertificatecs.resx">
+      <DependentUpon>CrudCertificatecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudClient.resx">
+      <DependentUpon>CrudClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudCreditors.resx">
+      <DependentUpon>CrudCreditors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudDebtors.resx">
+      <DependentUpon>CrudDebtors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudDepartments.resx">
+      <DependentUpon>CrudDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudEmployee.resx">
+      <DependentUpon>CrudEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudLoans.resx">
+      <DependentUpon>CrudLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrDebtors.resx">
+      <DependentUpon>ctrDebtors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrDepartments.resx">
+      <DependentUpon>CtrDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlCertificate.resx">
+      <DependentUpon>CtrlCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlClient.resx">
+      <DependentUpon>CtrlClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlCreditors.resx">
+      <DependentUpon>ctrlCreditors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrlEmployee.resx">
+      <DependentUpon>ctrlEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrLoans.resx">
+      <DependentUpon>CtrLoans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateAndTime.resx">
+      <DependentUpon>DateAndTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankSystemDataAccessLayer\BankSystemDataAccessLayer.csproj">
+      <Project>{46727e46-4c18-4513-a2e3-455580e25603}</Project>
+      <Name>BankSystemDataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\مكبر.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NationalId.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Balanaces.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cahr.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transfer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transfer1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
